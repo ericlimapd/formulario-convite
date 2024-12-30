@@ -29,7 +29,7 @@
 
           <form method="post" enctype="multipart/form-data">
             <fieldset class="event-info">
-              <legend class="flex-legend">
+              <legend>
                 <img
                   src="assets/icons/calendar-gray.svg"
                   alt="Ícone de calendário"
@@ -71,6 +71,7 @@
                         name="event-type"
                         id="on-site"
                         value="on-site"
+                        checked
                       />
                       <svg
                         width="16"
@@ -126,7 +127,54 @@
                 </div>
               </div>
 
-              <div class="textarea-wrapper"></div>
+              <div class="textarea-wrapper">
+                <label for="description">Descrição</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  placeholder="Escreva sobre os detalhes do evento"
+                  rows="4"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="customization">
+              <legend>
+                <img
+                  src="assets/icons/paintbrush-vertical-gray.svg"
+                  alt="Ícone de pincel"
+                />
+                Personalização
+              </legend>
+
+              <div class="radio-wrapper">
+                <label for="color">Cor principal</label>
+
+                <div class="colors-wrapper">
+                  <input
+                    type="radio"
+                    name="color"
+                    value="blue"
+                    id="blue"
+                    checked
+                  />
+                  <input type="radio" name="color" value="navy" id="navy" />
+                  <input type="radio" name="color" value="purple" id="purple" />
+                  <input
+                    type="radio"
+                    name="color"
+                    value="fuschia"
+                    id="fuschia"
+                  />
+                  <input type="radio" name="color" value="pink" id="pink" />
+                  <input type="radio" name="color" value="red" id="red" />
+                  <input type="radio" name="color" value="orange" id="orange" />
+                  <input type="radio" name="color" value="yellow" id="yellow" />
+                  <input type="radio" name="color" value="lime" id="lime" />
+                  <input type="radio" name="color" value="green" id="green" />
+                  <input type="radio" name="color" value="cyan" id="cyan" />
+                </div>
+              </div>
             </fieldset>
           </form>
         </div>

@@ -1,3 +1,5 @@
+/* Seção Tipo */
+
 .inner-wrapper {
   display: flex;
   background-color: var(--input-base);
@@ -45,3 +47,67 @@
     margin-bottom: 0;
   }
 }
+
+/* Seção de cores */
+
+.colors-wrapper {
+  width: 100%;
+  margin-top: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+
+  & input {
+    cursor: pointer;
+    max-width: 12px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    border: 6px solid var(--shape-button);
+    outline: 2px solid transparent;
+    transition: outline-color 0.2s ease-in-out;
+
+    &:checked {
+      outline-color: var(--brand-light);
+    }
+  }
+
+  /* Background dos inputs */
+  & input {
+    &:nth-child(1) {
+      background-color: var(--brand-light);
+    }
+    &:nth-child(2) {
+      background-color: var(--navy);
+    }
+    &:nth-child(3) {
+      background-color: var(--purple);
+    }
+    &:nth-child(4) {
+      background-color: var(--fuschia);
+    }
+    &:nth-child(5) {
+      background-color: var(--pink);
+    }
+    &:nth-child(6) {
+      background-color: var(--danger);
+    }
+    &:nth-child(7) {
+      background-color: var(--orange);
+    }
+    &:nth-child(8) {
+      background-color: var(--yellow);
+    }
+    &:nth-child(9) {
+      background-color: var(--lime);
+    }
+    &:nth-child(10) {
+      background-color: var(--green);
+    }
+    &:nth-child(11) {
+      background-color: var(--cyan);
+    }
+  }
+}
+
+/* Seção de temas do evento*/
