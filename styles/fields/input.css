@@ -50,12 +50,14 @@ input[type="datetime-local"] {
   }
 }
 
-.input-wrapper {
-  height: 100%;
-}
-
 .flex {
+  display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+
+  & > div {
+    flex-basis: 33%;
+  }
 }
 
 .flex-1 {
