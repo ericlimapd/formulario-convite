@@ -111,3 +111,50 @@
 }
 
 /* Seção de temas do evento*/
+
+.top {
+  margin-top: 1.75rem;
+}
+
+.themes-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.2rem, 1fr));
+  gap: 0.5rem;
+}
+
+.theme-inner {
+  padding: 0.25rem;
+  max-width: fit-content;
+  text-align: center;
+
+  border-radius: 8px;
+  background-color: var(--shape-button);
+  border: 1px solid var(--input-stroke);
+  outline: 2px solid transparent;
+
+  transition: outline-color 0.2s ease-in-out;
+
+  position: relative;
+
+  cursor: pointer;
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & img {
+    border-radius: 4px;
+  }
+
+  & label {
+    margin-block: 0.5rem;
+  }
+
+  &:has(:checked) {
+    outline: 2px solid var(--brand-light);
+  }
+}
