@@ -59,3 +59,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}

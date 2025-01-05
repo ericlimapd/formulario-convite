@@ -49,13 +49,3 @@ input[type="datetime-local"] {
     width: 100%;
   }
 }
-
-.flex {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.flex-1 {
-  flex: 1;
-}

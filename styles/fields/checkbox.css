@@ -1,0 +1,67 @@
+.switch-wrapper {
+  margin-top: 1.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+
+  & span {
+    margin-top: 0.2rem;
+
+    color: var(--text-heading);
+    font: var(--body-sm);
+
+    &:after {
+      content: "Escuro";
+    }
+  }
+
+  .switch:has(:checked) + span:after {
+    content: "Claro";
+  }
+}
+
+.switch {
+  label {
+    padding: 0;
+    width: 4rem;
+    height: 2rem;
+
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  label::before {
+    position: absolute;
+    content: "";
+    background-color: var(--input-stroke);
+    width: 1.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 999px;
+    margin-inline: 0.25rem;
+    transition: transform 0.4s ease;
+  }
+
+  input:checked + label {
+    background-color: var(--brand-light);
+    transition: transform 0.4s ease;
+  }
+
+  input:checked + label::before {
+    transform: translateX(1.85rem);
+    background-color: var(--text-heading);
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+  }
+}
