@@ -1,3 +1,9 @@
+.style-wrapper {
+  label {
+    margin-bottom: 0px;
+  }
+}
+
 .switch-wrapper {
   margin-top: 1.25rem;
 
@@ -6,8 +12,6 @@
   align-items: center;
 
   & span {
-    margin-top: 0.2rem;
-
     color: var(--text-heading);
     font: var(--body-sm);
 
@@ -22,6 +26,9 @@
 }
 
 .switch {
+  display: flex;
+  align-items: center;
+
   label {
     padding: 0;
     width: 4rem;

@@ -1,0 +1,39 @@
+.droparea-wrapper {
+  & .dropzone {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    position: relative;
+
+    background-color: var(--shape-button);
+    color: var(--text-heading);
+    font: var(--body-sm);
+    font-weight: 500;
+
+    padding: 0.75rem;
+    border-radius: 8px;
+
+    cursor: pointer;
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    height: 100%;
+    width: 100%;
+
+    all: unset;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+
+    cursor: pointer;
+
+    &::-webkit-file-upload-button {
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}

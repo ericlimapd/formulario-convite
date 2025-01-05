@@ -69,3 +69,10 @@ img {
 .flex-1 {
   flex: 1;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 12rem));
+  row-gap: 1rem;
+  column-gap: 2rem;
+}

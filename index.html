@@ -340,7 +340,7 @@
                 </div>
               </div>
 
-              <div class="flex top">
+              <div class="grid top">
                 <div class="style-wrapper">
                   <label for="style">Estilo</label>
                   <div class="switch-wrapper">
@@ -351,9 +351,18 @@
                     <span></span>
                   </div>
                 </div>
-                <div class="file-wrapper" style="display: none">
-                  <input type="file" name="banner" id="banner" />
-                  <label for="banner"></label>
+
+                <div class="droparea-wrapper">
+                  <label for="banner-file">Foto de capa</label>
+
+                  <div class="dropzone">
+                    <img
+                      src="assets/icons/upload-blue.svg"
+                      alt="Ícone de upload"
+                    />
+                    <span>Selecionar</span>
+                    <input type="file" name="banner-file" id="banner-file" />
+                  </div>
                 </div>
               </div>
             </fieldset>
