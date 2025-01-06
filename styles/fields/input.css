@@ -49,3 +49,27 @@ input[type="datetime-local"] {
     width: 100%;
   }
 }
+
+/*  */
+
+input[type="text"],
+textarea,
+select {
+  &:invalid {
+    border: 1px solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    font: var(--body-xs);
+    line-height: 1rem;
+    color: var(--danger);
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
