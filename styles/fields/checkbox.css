@@ -1,3 +1,5 @@
+/* Seção de Estilo */
+
 .style-wrapper {
   label {
     margin-bottom: 0px;
@@ -70,5 +72,55 @@
   & input:focus,
   & input:hover {
     all: unset;
+  }
+}
+
+/* Seção de Termos e Condições */
+
+.checkbox-wrapper {
+  & .checkbox {
+    position: relative;
+
+    display: flex;
+    gap: 0.75rem;
+
+    .checkbox-image {
+      flex: 0 0 1rem;
+      height: 1rem;
+
+      background-color: var(--input-base);
+      border: 1px solid var(--input-stroke);
+      border-radius: 4px;
+    }
+
+    &:hover {
+      .checkbox-image {
+        border-color: var(--brand-light);
+      }
+    }
+
+    &:has(:checked) .checkbox-image {
+      background-image: url(../../assets/icons/check.svg);
+      background-position: center;
+      border-color: var(--brand-light);
+    }
+
+    & input {
+      cursor: pointer;
+    }
+
+    & [type="checkbox"] {
+      all: unset;
+      position: absolute;
+      inset: 0;
+      width: 1rem;
+    }
+
+    & strong {
+      text-decoration: underline;
+      color: var(--brand-light);
+      font-weight: 500;
+      cursor: pointer;
+    }
   }
 }
